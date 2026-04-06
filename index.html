@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Pravachan D S – Aspiring AI Engineer | Problem Solver | Building Real-World Tech Solutions. Explore projects, skills, and achievements." />
+  <title>Pravachan D S | AI Engineer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ─── Particle Canvas ─── -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- ─── Background Orbs ─── -->
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+  <div class="bg-orb orb-3"></div>
+
+  <!-- ═══════════════════════════════════════
+       NAVBAR
+  ═══════════════════════════════════════ -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>PDS<span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#hero"         class="nav-link" id="nav-home">Home</a></li>
+        <li><a href="#about"        class="nav-link" id="nav-about">About</a></li>
+        <li><a href="#skills"       class="nav-link" id="nav-skills">Skills</a></li>
+        <li><a href="#projects"     class="nav-link" id="nav-projects">Projects</a></li>
+        <li><a href="#achievements" class="nav-link" id="nav-achievements">Achievements</a></li>
+        <li><a href="#contact"      class="nav-link" id="nav-contact">Contact</a></li>
+      </ul>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════ -->
+  <section id="hero">
+    <div class="hero-content">
+      <div class="hero-badge reveal-up">
+        <i class="fa-solid fa-circle-dot pulse-dot"></i>
+        Available for Opportunities
+      </div>
+
+      <h1 class="hero-name reveal-up delay-1">
+        Pravachan <span class="gradient-text">D S</span>
+      </h1>
+
+      <p class="hero-tagline reveal-up delay-2">
+        Aspiring AI Engineer &nbsp;|&nbsp; Problem Solver &nbsp;|&nbsp; Building Real-World Tech Solutions
+      </p>
+
+      <p class="hero-intro reveal-up delay-3">
+        I build <span class="highlight">intelligent systems</span> to solve real-world problems.
+      </p>
+
+      <div class="hero-cta reveal-up delay-4">
+        <a href="#projects" class="btn btn-primary" id="btn-view-projects">
+          <i class="fa-solid fa-code"></i> View Projects
+        </a>
+        <a href="#contact" class="btn btn-outline" id="btn-contact-me">
+          <i class="fa-solid fa-paper-plane"></i> Contact Me
+        </a>
+      </div>
+
+      <div class="hero-stats reveal-up delay-5">
+        <div class="stat">
+          <span class="stat-num" data-target="2">0</span>
+          <span class="stat-label">Hackathons Won</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="3">0</span>
+          <span class="stat-label">Certifications</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="2">0</span>
+          <span class="stat-label">Major Projects</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint">
+      <span>Scroll Down</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       ABOUT
+  ═══════════════════════════════════════ -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <p class="section-tag">// who I am</p>
+        <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-avatar-wrap reveal-left">
+          <div class="about-avatar-card glass-card">
+            <div class="avatar-ring">
+              <div class="avatar-inner">
+                <i class="fa-solid fa-robot avatar-icon"></i>
+              </div>
+            </div>
+            <div class="avatar-info">
+              <p class="avatar-name">Pravachan D S</p>
+              <p class="avatar-role">AI Engineer</p>
+              <div class="avatar-tags">
+                <span class="tag">Python</span>
+                <span class="tag">ML</span>
+                <span class="tag">IoT</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-text reveal-right">
+          <p>
+            I'm <strong>Pravachan D S</strong>, an aspiring AI Engineer with a relentless passion
+            for designing intelligent systems that make a tangible difference in the world.
+            From aiding road safety with computer-vision powered detection to building
+            IoT-driven flood-alert infrastructure, I thrive at the intersection of
+            <strong>Artificial Intelligence, embedded systems, and human-centred design</strong>.
+          </p>
+          <p>
+            My engineering philosophy is simple: <em>technology should solve real problems, not create new ones.</em>
+            I lead teams with empathy, architect solutions with rigour, and iterate with the mindset
+            of a craftsman. Whether I'm training neural networks, debugging embedded C, or collaborating
+            on open-source tools, I bring the same level of curiosity and commitment to every challenge.
+          </p>
+          <p>
+            When I'm not engineering, I'm immersed in the latest AI research, competing at hackathons,
+            or mentoring peers on machine learning fundamentals. I believe the best innovations come
+            from diverse teams driven by a shared purpose — and I'm always looking for the next
+            opportunity to build something that matters.
+          </p>
+
+          <div class="about-facts">
+            <div class="fact glass-card">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>India</span>
+            </div>
+            <div class="fact glass-card">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <span>Engineering Student</span>
+            </div>
+            <div class="fact glass-card">
+              <i class="fa-solid fa-brain"></i>
+              <span>AI Enthusiast</span>
+            </div>
+            <div class="fact glass-card">
+              <i class="fa-solid fa-trophy"></i>
+              <span>Hackathon Winner</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       SKILLS
+  ═══════════════════════════════════════ -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <p class="section-tag">// what I know</p>
+        <h2 class="section-title">Skills &amp; <span class="gradient-text">Technologies</span></h2>
+      </div>
+
+      <div class="skills-grid">
+
+        <!-- Programming Languages -->
+        <div class="skill-category glass-card reveal-up delay-1">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon"><i class="fa-solid fa-code"></i></div>
+            <h3>Programming Languages</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item" id="skill-c">
+              <div class="skill-info">
+                <i class="fa-solid fa-c skill-lang-icon" style="color:#659ad2;"></i>
+                <span>C</span>
+              </div>
+              <div class="skill-bar-wrap">
+                <div class="skill-bar" data-width="80"></div>
+              </div>
+              <span class="skill-pct">80%</span>
+            </div>
+            <div class="skill-item" id="skill-java">
+              <div class="skill-info">
+                <i class="fa-brands fa-java skill-lang-icon" style="color:#f89820;"></i>
+                <span>Java</span>
+              </div>
+              <div class="skill-bar-wrap">
+                <div class="skill-bar" data-width="75"></div>
+              </div>
+              <span class="skill-pct">75%</span>
+            </div>
+            <div class="skill-item" id="skill-python">
+              <div class="skill-info">
+                <i class="fa-brands fa-python skill-lang-icon" style="color:#3572A5;"></i>
+                <span>Python</span>
+              </div>
+              <div class="skill-bar-wrap">
+                <div class="skill-bar" data-width="90"></div>
+              </div>
+              <span class="skill-pct">90%</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools & Technologies -->
+        <div class="skill-category glass-card reveal-up delay-2">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon"><i class="fa-solid fa-wrench"></i></div>
+            <h3>Tools &amp; Technologies</h3>
+          </div>
+          <div class="skill-badges">
+            <div class="skill-badge" id="badge-git">
+              <i class="fa-brands fa-git-alt" style="color:#f05032;"></i> Git
+            </div>
+            <div class="skill-badge" id="badge-github">
+              <i class="fa-brands fa-github"></i> GitHub
+            </div>
+            <div class="skill-badge" id="badge-vscode">
+              <i class="fa-solid fa-laptop-code" style="color:#007acc;"></i> VS Code
+            </div>
+            <div class="skill-badge" id="badge-tensorflow">
+              <i class="fa-solid fa-brain" style="color:#ff6f00;"></i> TensorFlow
+            </div>
+          </div>
+        </div>
+
+        <!-- Soft Skills -->
+        <div class="skill-category glass-card reveal-up delay-3">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon"><i class="fa-solid fa-users"></i></div>
+            <h3>Soft Skills</h3>
+          </div>
+          <div class="soft-skills">
+            <div class="soft-skill" id="soft-leadership">
+              <div class="soft-icon"><i class="fa-solid fa-user-tie"></i></div>
+              <div class="soft-text">
+                <strong>Team Leadership</strong>
+                <p>Guiding cross-functional teams toward shared goals with clarity and empathy.</p>
+              </div>
+            </div>
+            <div class="soft-skill" id="soft-problem">
+              <div class="soft-icon"><i class="fa-solid fa-lightbulb"></i></div>
+              <div class="soft-text">
+                <strong>Problem Solving</strong>
+                <p>Breaking complex challenges into structured, actionable solutions.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       PROJECTS
+  ═══════════════════════════════════════ -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <p class="section-tag">// what I've built</p>
+        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project 1: LIFE -->
+        <div class="project-card glass-card reveal-up delay-1" id="project-life">
+          <div class="project-glow life-glow"></div>
+          <div class="project-top">
+            <div class="project-icon life-icon">
+              <i class="fa-solid fa-shield-heart"></i>
+            </div>
+            <div class="project-links">
+              <a href="#" class="icon-btn" title="GitHub" aria-label="View LIFE on GitHub">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="#" class="icon-btn" title="Live Demo" aria-label="View LIFE live demo">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">LIFE</h3>
+          <p class="project-subtitle">Living-being Identification for Enhanced Safety</p>
+          <p class="project-desc">
+            An AI-assisted safety system that leverages real-time computer vision to detect
+            humans and animals under or near vehicles before the driver moves — drastically
+            reducing road accidents caused by blind spots. The system integrates with a
+            web-based dashboard for fleet operators.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Machine Learning</span>
+            <span class="tech-tag">OpenCV</span>
+            <span class="tech-tag">Web Interface</span>
+          </div>
+          <div class="project-footer">
+            <span class="project-category"><i class="fa-solid fa-microchip"></i> AI / Safety</span>
+          </div>
+        </div>
+
+        <!-- Project 2: DrainX -->
+        <div class="project-card glass-card reveal-up delay-2" id="project-drainx">
+          <div class="project-glow drainx-glow"></div>
+          <div class="project-top">
+            <div class="project-icon drainx-icon">
+              <i class="fa-solid fa-water"></i>
+            </div>
+            <div class="project-links">
+              <a href="#" class="icon-btn" title="GitHub" aria-label="View DrainX on GitHub">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="#" class="icon-btn" title="Live Demo" aria-label="View DrainX live demo">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">DrainX</h3>
+          <p class="project-subtitle">Smart Drainage Monitoring System</p>
+          <p class="project-desc">
+            A smart city IoT solution that continuously monitors urban drainage water levels
+            using embedded sensors and triggers early flood alerts to authorities and residents.
+            Data streams into a real-time web dashboard with historical analytics and predictive
+            alert thresholds for proactive flood management.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">IoT Sensors</span>
+            <span class="tech-tag">Embedded Systems</span>
+            <span class="tech-tag">Web Dashboard</span>
+            <span class="tech-tag">Real-time Alerts</span>
+          </div>
+          <div class="project-footer">
+            <span class="project-category"><i class="fa-solid fa-tower-broadcast"></i> IoT / Smart City</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       ACHIEVEMENTS
+  ═══════════════════════════════════════ -->
+  <section id="achievements">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <p class="section-tag">// milestones</p>
+        <h2 class="section-title">Achievements &amp; <span class="gradient-text">Recognition</span></h2>
+      </div>
+
+      <div class="achieve-grid">
+
+        <div class="achieve-card glass-card reveal-up delay-1" id="achieve-hackathon">
+          <div class="achieve-icon hackathon-icon">
+            <i class="fa-solid fa-trophy"></i>
+          </div>
+          <div class="achieve-content">
+            <h3>2× Hackathon Winner</h3>
+            <p>
+              Competed in and won two competitive hackathons, delivering working prototypes
+              under pressure and earning recognition for innovation and execution.
+            </p>
+          </div>
+          <div class="achieve-badge">🏆 Winner</div>
+        </div>
+
+        <div class="achieve-card glass-card reveal-up delay-2" id="achieve-certs">
+          <div class="achieve-icon cert-icon">
+            <i class="fa-solid fa-certificate"></i>
+          </div>
+          <div class="achieve-content">
+            <h3>3× Meta Certifications</h3>
+            <p>
+              Completed three professional certifications from <strong>Meta</strong> in the
+              domains of Artificial Intelligence and Machine Learning, validating industry-grade competency.
+            </p>
+          </div>
+          <div class="achieve-badge">🎓 Certified</div>
+        </div>
+
+        <div class="achieve-card glass-card reveal-up delay-3" id="achieve-lead">
+          <div class="achieve-icon lead-icon">
+            <i class="fa-solid fa-people-group"></i>
+          </div>
+          <div class="achieve-content">
+            <h3>Team Lead &amp; Project Head</h3>
+            <p>
+              Spearheaded multiple engineering projects as Team Lead and Project Head, overseeing
+              end-to-end development, stakeholder communication, and on-time delivery.
+            </p>
+          </div>
+          <div class="achieve-badge">👑 Leader</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       CONTACT
+  ═══════════════════════════════════════ -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <p class="section-tag">// let's connect</p>
+        <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+        <p class="section-sub">
+          Have a project in mind, want to collaborate, or just say hi? My inbox is always open.
+        </p>
+      </div>
+
+      <div class="contact-wrapper">
+
+        <div class="contact-info reveal-left">
+          <div class="contact-card glass-card" id="contact-email">
+            <div class="contact-icon email-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div class="contact-details">
+              <p class="contact-label">Email</p>
+              <a href="mailto:pravachan@example.com" class="contact-value">pravachan@example.com</a>
+            </div>
+          </div>
+
+          <div class="contact-card glass-card" id="contact-github">
+            <div class="contact-icon github-icon"><i class="fa-brands fa-github"></i></div>
+            <div class="contact-details">
+              <p class="contact-label">GitHub</p>
+              <a href="https://github.com/pravachan" target="_blank" rel="noopener noreferrer" class="contact-value">github.com/pravachan</a>
+            </div>
+          </div>
+
+          <div class="contact-card glass-card" id="contact-linkedin">
+            <div class="contact-icon linkedin-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+            <div class="contact-details">
+              <p class="contact-label">LinkedIn</p>
+              <a href="https://linkedin.com/in/pravachan" target="_blank" rel="noopener noreferrer" class="contact-value">linkedin.com/in/pravachan</a>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form glass-card reveal-right" id="contact-form" novalidate>
+          <div class="form-group">
+            <label for="form-name">Your Name</label>
+            <input type="text" id="form-name" name="name" placeholder="John Doe" required />
+          </div>
+          <div class="form-group">
+            <label for="form-email">Your Email</label>
+            <input type="email" id="form-email" name="email" placeholder="john@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="form-subject">Subject</label>
+            <input type="text" id="form-subject" name="subject" placeholder="Collaboration / Opportunity" />
+          </div>
+          <div class="form-group">
+            <label for="form-message">Message</label>
+            <textarea id="form-message" name="message" rows="5" placeholder="Hi Pravachan, I'd love to…" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary full-width" id="btn-send-msg">
+            <i class="fa-solid fa-paper-plane"></i> Send Message
+          </button>
+          <p class="form-success" id="form-success">
+            <i class="fa-solid fa-circle-check"></i> Message sent! I'll get back to you soon.
+          </p>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════ -->
+  <footer id="footer">
+    <div class="footer-inner">
+      <p class="footer-logo">
+        <span class="logo-bracket">&lt;</span>PDS<span class="logo-bracket">/&gt;</span>
+      </p>
+      <p class="footer-copy">
+        Designed &amp; Built by <span class="gradient-text">Pravachan D S</span> &copy; 2025
+      </p>
+      <div class="footer-socials">
+        <a href="mailto:pravachan@example.com"                       aria-label="Email"    id="footer-email"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://github.com/pravachan"    target="_blank" rel="noopener" aria-label="GitHub"   id="footer-github"><i class="fa-brands fa-github"></i></a>
+        <a href="https://linkedin.com/in/pravachan" target="_blank" rel="noopener" aria-label="LinkedIn" id="footer-linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
